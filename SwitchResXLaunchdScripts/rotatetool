@@ -1,0 +1,7 @@
+#!/bin/sh
+
+osascript -e "tell application \"SwitchResX Daemon\" to set orientation of display 1 to 0"
+echo "rotated to 0 at  $(date)" >> /tmp/rotated
+sleep 5
+osascript -e "tell application \"SwitchResX Daemon\" to set orientation of display 1 to 90"
+echo "rotated to 90 at  $(date)" >> /tmp/rotated
