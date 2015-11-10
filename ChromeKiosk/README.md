@@ -2,15 +2,8 @@
 
 Start Chrome in fullscreen mode
 
-```sh
-$ cd ~
-$ cd Library/LaunchAgents
-$ open .
-```
-Now, copy `com.unswornindustries.chromekiosk.plist` to here.
+1. Edit ChromeKiosk.scpt with Script Editor to point to the correct url
+2. Export as Application
+3. Add to login items
 
-```sh
-$ sudo chown naturum:staff com.unswornindustries.chromekiosk.plist
-$ chmod og-wx com.unswornindustries.chromekiosk.plist
-$ launchctl load com.unswornindustries.chromekiosk.plist
-```
+Note: Chrome sometimes complains after powercut: "not shutdown correctly" etc.
